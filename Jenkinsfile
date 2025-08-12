@@ -16,13 +16,13 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'java TestFactorial'
+                bat 'java TestFactorial.java'
             }
         }
 
         stage('Run') {
             steps {
-                bat 'java Factorial'
+                bat 'java Factorial.java'
             }
         }
 
